@@ -18,10 +18,6 @@ Media router that routes media streams from one end to the other
 <a href="https://github.com/YunoHost-Apps/mediamtx_ynh/issues"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_report_an_issue.svg"/></a>
 </div>
 
-
-## Screenshots
-![Screenshot of MediaMTX](./doc/screenshots/example.jpg)
-
 ## 📦 Developer info
 
 [![Automatic tests level](https://apps.yunohost.org/badge/cilevel/mediamtx)](https://ci-apps.yunohost.org/ci/apps/mediamtx/)
