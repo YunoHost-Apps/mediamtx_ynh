@@ -11,7 +11,7 @@ It shall NOT be edited by hand.
 Media router that routes media streams from one end to the other
 
 [![🌐 Official app website](https://img.shields.io/badge/Official_app_website-darkgreen?style=for-the-badge)](https://mediamtx.org/)
-[![Version: 1.18.1~ynh1](https://img.shields.io/badge/Version-1.18.1~ynh1-rgb(18,138,11)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/mediamtx/)
+[![Version: 1.21.3~ynh1](https://img.shields.io/badge/Version-1.21.3~ynh1-rgb(18,138,11)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/mediamtx/)
 
 <div align="center">
 <a href="https://apps.yunohost.org/app/mediamtx"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_more_info_on_the_appstore.svg"/></a>
