@@ -166,7 +166,7 @@ apiAllowOrigins: []
 # IPs or CIDRs of proxies placed before the HTTP server.
 # These proxies can use the X-Forwarded-For header to set the real IP of clients,
 # and the X-Forwarded-Proto header to set the original protocol.
-apiTrustedProxies: []
+apiTrustedProxies: ["127.0.0.1"]
 
 ###############################################
 # Global settings -> Metrics server
@@ -190,7 +190,7 @@ metricsAllowOrigins: []
 # IPs or CIDRs of proxies placed before the HTTP server.
 # These proxies can use the X-Forwarded-For header to set the real IP of clients,
 # and the X-Forwarded-Proto header to set the original protocol.
-metricsTrustedProxies: []
+metricsTrustedProxies: ["127.0.0.1"]
 
 ###############################################
 # Global settings -> PPROF server
@@ -214,7 +214,7 @@ pprofAllowOrigins: []
 # IPs or CIDRs of proxies placed before the HTTP server.
 # These proxies can use the X-Forwarded-For header to set the real IP of clients,
 # and the X-Forwarded-Proto header to set the original protocol.
-pprofTrustedProxies: []
+pprofTrustedProxies: ["127.0.0.1"]
 
 ###############################################
 # Global settings -> Playback server
@@ -238,7 +238,7 @@ playbackAllowOrigins: ["*"]
 # IPs or CIDRs of proxies placed before the HTTP server.
 # These proxies can use the X-Forwarded-For header to set the real IP of clients,
 # and the X-Forwarded-Proto header to set the original protocol.
-playbackTrustedProxies: []
+playbackTrustedProxies: ["127.0.0.1"]
 
 ###############################################
 # Global settings -> RTSP server
@@ -285,7 +285,7 @@ rtspAuthMethods: [basic]
 # IPs or CIDRs of proxies placed before the RTSP server.
 # If the server receives a request from one of these entries, IP in logs
 # and authentication will be taken from the PROXY protocol header.
-rtspTrustedProxies: []
+rtspTrustedProxies: ["127.0.0.1"]
 
 ###############################################
 # Global settings -> RTMP server
@@ -309,7 +309,7 @@ rtmpServerCert: /etc/yunohost/certs/__DOMAIN__/crt.pem
 # IPs or CIDRs of proxies placed before the RTMP server.
 # If the server receives a request from one of these entries, IP in logs
 # and authentication will be taken from the PROXY protocol header.
-rtmpTrustedProxies: []
+rtmpTrustedProxies: ["127.0.0.1"]
 
 ###############################################
 # Global settings -> HLS server
@@ -334,7 +334,7 @@ hlsAllowOrigins: ["*"]
 # IPs or CIDRs of proxies placed before the HLS server.
 # If the server receives a request from one of these entries, IP in logs
 # will be taken from the X-Forwarded-For header.
-hlsTrustedProxies: []
+hlsTrustedProxies: ["127.0.0.1"]
 # By default, HLS is generated only when requested by a user.
 # This option allows to generate it always, avoiding the delay between request and generation.
 hlsAlwaysRemux: true
@@ -398,7 +398,7 @@ webrtcAllowOrigins: ["*"]
 # IPs or CIDRs of proxies placed before the WebRTC server.
 # If the server receives a request from one of these entries, IP in logs
 # will be taken from the X-Forwarded-For header.
-webrtcTrustedProxies: []
+webrtcTrustedProxies: ["127.0.0.1"]
 # Address of a UDP/ICE listener that will receive connections.
 # Use a blank string to disable.
 webrtcLocalUDPAddress: :__PORT_WEBRTC_UDP__
@@ -466,7 +466,7 @@ moqServerCert: auto.crt
 # Allowed origins for CORS.
 moqAllowOrigins: ["*"]
 # Proxies which are trusted to provide the client's real IP via the X-Forwarded-For header.
-moqTrustedProxies: []
+moqTrustedProxies: ["127.0.0.1"]
 
 ###############################################
 # Default path settings
