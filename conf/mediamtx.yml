@@ -133,7 +133,7 @@ authJWTClaimKey: mediamtx_permissions
 # Enable controlling the server through the Control API.
 api: no
 # Address of the Control API listener.
-apiAddress: :__API_PORT__
+apiAddress: :__PORT_API__
 # Enable TLS/HTTPS on the Control API server.
 apiEncryption: no
 # Path to the server key. This is needed only when encryption is yes.
@@ -156,7 +156,7 @@ apiTrustedProxies: []
 # Enable Prometheus-compatible metrics.
 metrics: no
 # Address of the metrics HTTP listener.
-metricsAddress: :__METRICS_PORT__
+metricsAddress: :__PORT_METRICS__
 # Enable TLS/HTTPS on the Metrics server.
 metricsEncryption: no
 # Path to the server key. This is needed only when encryption is yes.
@@ -179,7 +179,7 @@ metricsTrustedProxies: []
 # Enable pprof-compatible endpoint to monitor performances.
 pprof: no
 # Address of the pprof listener.
-pprofAddress: :__PPROF_PORT__
+pprofAddress: :__PORT_PPROF__
 # Enable TLS/HTTPS on the pprof server.
 pprofEncryption: no
 # Path to the server key. This is needed only when encryption is yes.
@@ -202,7 +202,7 @@ pprofTrustedProxies: []
 # Enable downloading recordings from the playback server.
 playback: no
 # Address of the playback server listener.
-playbackAddress: :__PLAYBACK_PORT__
+playbackAddress: :__PORT_PLAYBACK__
 # Enable TLS/HTTPS on the playback server.
 playbackEncryption: no
 # Path to the server key. This is needed only when encryption is yes.
@@ -236,13 +236,13 @@ rtspTransports: [udp, multicast, tcp]
 # Available values are "no", "strict", "optional".
 rtspEncryption: "no"
 # Address of the TCP/RTSP listener. This is needed only when encryption is "no" or "optional".
-rtspAddress: :__RTSP_PORT__
+rtspAddress: :__PORT_RTSP__
 # Address of the TCP/TLS/RTSPS listener. This is needed only when encryption is "strict" or "optional".
-rtspsAddress: :__RTSPS_PORT__
+rtspsAddress: :__PORT_RTSPS__
 # Address of the UDP/RTP listener. This is needed only when "udp" is in rtspTransports.
-rtpAddress: :__RTP_PORT__
+rtpAddress: :__PORT_RTP__
 # Address of the UDP/RTCP listener. This is needed only when "udp" is in rtspTransports.
-rtcpAddress: :__RTCP_PORT__
+rtcpAddress: :__PORT_RTCP__
 # IP range of all UDP-multicast listeners. This is needed only when "multicast" is in rtspTransports.
 multicastIPRange: 224.1.0.0/16
 # Port of all UDP-multicast/RTP listeners. This is needed only when "multicast" is in rtspTransports.
@@ -266,12 +266,12 @@ rtspAuthMethods: [basic]
 # Enable publishing and reading streams with the RTMP protocol.
 rtmp: yes
 # Address of the RTMP listener. This is needed only when encryption is "no" or "optional".
-rtmpAddress: :__RTMP_PORT__
+rtmpAddress: :__PORT_RTMP__
 # Encrypt connections with TLS (RTMPS).
 # Available values are "no", "strict", "optional".
 rtmpEncryption: "no"
 # Address of the RTMPS listener. This is needed only when encryption is "strict" or "optional".
-rtmpsAddress: :__RTMPS_PORT__
+rtmpsAddress: :__PORT_RTMPS__
 # Path to the server key. This is needed only when encryption is "strict" or "optional".
 # This can be generated with:
 # openssl genrsa -out server.key 2048
@@ -345,7 +345,7 @@ hlsMuxerCloseAfter: 60s
 # Enable publishing and reading streams with the WebRTC protocol.
 webrtc: yes
 # Address of the WebRTC HTTP listener.
-webrtcAddress: :__WEBRTC_PORT__
+webrtcAddress: :__PORT_WEBRTC__
 # Enable TLS/HTTPS on the WebRTC server.
 webrtcEncryption: no
 # Path to the server key.
@@ -364,7 +364,7 @@ webrtcAllowOrigin: "*"
 webrtcTrustedProxies: []
 # Address of a local UDP listener that will receive connections.
 # Use a blank string to disable.
-webrtcLocalUDPAddress: :__WebRTC_UDP_PORT__
+webrtcLocalUDPAddress: :__PORT_WEBRTC_UDP__
 # Address of a local TCP listener that will receive connections.
 # This is disabled by default since TCP is less efficient than UDP and
 # introduces a progressive delay when network is congested.
@@ -399,7 +399,7 @@ webrtcTrackGatherTimeout: 2s
 # Enable publishing and reading streams with the SRT protocol.
 srt: yes
 # Address of the SRT listener.
-srtAddress: :__SRT_PORT__
+srtAddress: :__PORT_SRT__
 
 ###############################################
 # Default path settings
