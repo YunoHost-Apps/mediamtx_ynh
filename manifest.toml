@@ -63,3 +63,36 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.ports]
+    main.default = 8888  # HLS port
+
+    rtsp.default = 8554
+    rtsp.exposed = "TCP"
+    rtp.default = 8554
+    rtp.exposed = "UDP"
+    rtcp.default = 8001
+    rtcp.exposed = "UDP"
+
+    rtmp.default = 1935
+    rtmp.exposed = "TCP"
+    rtmps.default = 1936
+    rtmps.exposed = "TCP"
+
+    webrtc_tcp.default = 8889
+    webrtc_tcp.exposed = "TCP"
+    webrtc_udp.default = 8189
+    webrtc_udp.exposed = "UDP"
+
+    srt.default = 8890
+    srt.exposed = "UDP"
+
+    playback.default = 9996
+    playback.exposed = "UDP"
+
+    api.default = 9997
+    api.exposed = "TCP"
+
+    metrics.default = 9998
+    metrics.exposed = "TCP"
+
+    pprof.default = 9998
+    pprof.exposed = "TCP"
