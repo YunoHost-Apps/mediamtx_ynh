@@ -52,8 +52,12 @@ ram.runtime = "50M"
     arm64.sha256 = "27f038237cb5f77a724f6afc58eca2798f2bc4edf9989895631a80eeb41a4fe2"
     armhf.url = "https://github.com/bluenviron/mediamtx/releases/download/v1.21.3/mediamtx_v1.21.3_linux_armv7.tar.gz"
     armhf.sha256 = "134b53bfdb26583d02e1c27fc256d587cf3482e80c9e3b49083595e19a096284"
+    in_subdir = false
 
     autoupdate.strategy = "latest_github_release"
+    autoupdate.asset.amd64 = ".*\\_linux_amd64.tar.gz"
+    autoupdate.asset.arm64 = ".*\\_linux_arm64.tar.gz"
+    autoupdate.asset.armhf = ".*\\_linux_armv7.tar.gz"
 
     [resources.system_user]
 
