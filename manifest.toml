@@ -104,3 +104,6 @@ ram.runtime = "50M"
 
     pprof.default = 9998
     pprof.exposed = "TCP"
+
+    [resources.apt]
+    packages = ["ffmpeg"]
