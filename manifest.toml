@@ -77,8 +77,8 @@ ram.runtime = "50M"
     rtmps.default = 1936
     rtmps.exposed = "TCP"
 
-    webrtc_tcp.default = 8889
-    webrtc_tcp.exposed = "TCP"
+    webrtc.default = 8889
+    webrtc.exposed = "TCP"
     webrtc_udp.default = 8189
     webrtc_udp.exposed = "UDP"
 
