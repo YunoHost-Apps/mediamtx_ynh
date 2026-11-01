@@ -888,6 +888,10 @@ paths:
   # my_camera:
   #   source: rtsp://my_camera
 
+  test:  # thanks to https://eljefedelrodeo.humans.airdress.co/blog/03-rtsp-test-stream/
+      runOnDemand: ffmpeg -f lavfi -i testsrc=size=1280x720:rate=30 -f lavfi -i sine=frequency=400 -vcodec libx264 -pix_fmt yuv420p -acodec aac -ar 24000 -rtsp_transport tcp -f rtsp rtsp://127.0.0.1:__PORT_RTSP__/test
+      runOnDemandRestart: yes
+
   # Settings under path "all_others" are applied to all paths that
   # do not match another entry.
   all_others:
