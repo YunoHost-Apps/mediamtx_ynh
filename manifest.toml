@@ -69,6 +69,8 @@ ram.runtime = "50M"
 
     rtsp.default = 8554
     rtsp.exposed = "TCP"
+    rtsps.default = 8322
+    rtsps.exposed = "TCP"
     rtp.default = 8554
     rtp.exposed = "UDP"
     rtcp.default = 8001
