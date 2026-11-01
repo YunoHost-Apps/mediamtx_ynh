@@ -77,7 +77,7 @@ authInternalUsers:
 
     # This allows to publish a stream on any path without authentication,
     # if the IP is a local IP.
-  - user: admin
+  - user: any
     pass:
     ips: ["10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16", "fc00::/7", "fe80::/16"]
     permissions:
