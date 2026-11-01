@@ -31,6 +31,10 @@ chown "$app:$app" "$install_dir/mediamtx.yml"
 #=================================================
 ynh_script_progression "Adding system configurations related to $app..."
 
+# adding the mediamtx dedicated user to the 'ssl-cert' group
+# to permit the use of the Let's Encrypt certs
+usermod -a -G ssl-cert "$app"
+
 ynh_config_add_nginx
 
 ynh_config_add_systemd
