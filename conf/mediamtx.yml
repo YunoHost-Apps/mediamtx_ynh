@@ -249,7 +249,7 @@ rtsp: true
 rtspTransports: [udp, multicast, tcp]
 # Use secure protocol variants (RTSPS, SRTP, SRTCP).
 # Available values are "no", "strict", "optional".
-rtspEncryption: "no"
+rtspEncryption: "optional"
 # Address of the TCP/RTSP listener. This is needed only when encryption is "no" or "optional".
 rtspAddress: :__PORT_RTSP__
 # Address of the TCP/RTSPS listener. This is needed only when encryption is "strict" or "optional".
@@ -294,7 +294,7 @@ rtspTrustedProxies: ["127.0.0.1"]
 rtmp: true
 # Use the secure protocol variant (RTMPS).
 # Available values are "no", "strict", "optional".
-rtmpEncryption: "no"
+rtmpEncryption: "optional"
 # Address of the TCP/RTMP listener. This is needed only when encryption is "no" or "optional".
 rtmpAddress: :__PORT_RTMP__
 # Address of the TCP/RTMPS listener. This is needed only when encryption is "strict" or "optional".
@@ -320,7 +320,7 @@ hls: true
 hlsAddress: :__PORT__
 # Enable HTTPS.
 # This is required for Low-Latency HLS to function correctly on Apple devices.
-hlsEncryption: false
+hlsEncryption: true
 # Path to the server key. This is needed only when encryption is yes.
 # This can be generated with:
 # openssl genrsa -out server.key 2048
@@ -384,7 +384,7 @@ webrtcAddress: :__PORT_WEBRTC__
 # Enable HTTPS.
 # This covers only the WebRTC handshake, while WebRTC streams
 # are always encrypted with a key that is exchanged during the WebRTC handshake.
-webrtcEncryption: false
+webrtcEncryption: true
 # Path to the server key.
 # This can be generated with:
 # openssl genrsa -out server.key 2048
