@@ -97,13 +97,8 @@ ram.runtime = "50M"
     playback.exposed = "UDP"
 
     api.default = 9997
-    api.exposed = "TCP"
-
     metrics.default = 9998
-    metrics.exposed = "TCP"
-
     pprof.default = 9998
-    pprof.exposed = "TCP"
 
     [resources.apt]
     packages = ["ffmpeg"]

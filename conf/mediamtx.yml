@@ -372,7 +372,7 @@ hlsMuxerCloseAfter: 60s
 # Secret to identify requests coming from a CDN.
 # The CDN must insert this secret in every request in the
 # 'Authorization: Bearer' header.
-hlsCDNSecret: ""
+hlsCDNSecret: "YunoHost"
 
 ###############################################
 # Global settings -> WebRTC server
