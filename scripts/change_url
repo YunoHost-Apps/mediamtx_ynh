@@ -19,6 +19,16 @@ ynh_script_progression "Updating NGINX web server configuration..."
 ynh_config_change_url_nginx
 
 #=================================================
+# MODIFY URL IN MEDIAMTX CONF
+#=================================================
+ynh_script_progression "Updating $app configuration..."
+
+# we need to replace 16 times the value
+for i in {1..16}; do
+    ynh_replace --match="$old_domain" --replace="$new_domain" --file="$install_dir/mediamtx.yml"
+done
+
+#=================================================
 # END OF SCRIPT
 #=================================================
 
