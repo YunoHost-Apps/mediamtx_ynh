@@ -27,7 +27,7 @@ ynh_systemctl --service="$app" --action="stop"
 
 # we need to replace 16 times the value
 for i in {1..16}; do
-    ynh_replace --match="$old_domain" --replace="$new_domain" --file="$install_dir/mediamtx.yml"
+    ynh_replace --match="/etc/yunohost/certs/$old_domain/" --replace="/etc/yunohost/certs/$new_domain/" --file="$install_dir/mediamtx.yml"
 done
 
 ynh_systemctl --service="$app" --action="start"
