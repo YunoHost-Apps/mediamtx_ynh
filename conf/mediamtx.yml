@@ -322,7 +322,7 @@ hls: true
 hlsAddress: :__PORT__
 # Enable HTTPS.
 # This is required for Low-Latency HLS to function correctly on Apple devices.
-hlsEncryption: true
+hlsEncryption: false
 # Path to the server key. This is needed only when encryption is yes.
 # This can be generated with:
 # openssl genrsa -out server.key 2048
@@ -386,7 +386,7 @@ webrtcAddress: :__PORT_WEBRTC__
 # Enable HTTPS.
 # This covers only the WebRTC handshake, while WebRTC streams
 # are always encrypted with a key that is exchanged during the WebRTC handshake.
-webrtcEncryption: true
+webrtcEncryption: false
 # Path to the server key.
 # This can be generated with:
 # openssl genrsa -out server.key 2048
