@@ -21,7 +21,7 @@ code = "https://github.com/bluenviron/mediamtx"
 yunohost = ">= 12.1.17"
 helpers_version = "2.1"
 architectures = ["amd64", "arm64", "armhf"]
-multi_instance = true
+multi_instance = false
 ldap = "not_relevant"
 sso = "not_relevant"
 
