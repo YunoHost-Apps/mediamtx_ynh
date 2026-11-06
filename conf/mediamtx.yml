@@ -91,7 +91,7 @@ authInternalUsers:
     pass:
     ips: ["127.0.0.1", "::1"]
     permissions:
-    - action: publish
+      - action: publish
         path:
       - action: api
       - action: metrics
