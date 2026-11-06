@@ -37,6 +37,10 @@ ynh_restore "/etc/logrotate.d/$app"
 
 ynh_restore "/var/log/$app/"
 
+# Make sure log file's permissions are correct
+chown "$app:$app" "/var/log/$app/"
+chmod u=rwX,g=rX,o= "/var/log/$app/"
+
 ynh_restore "/etc/fail2ban/jail.d/$app.conf"
 ynh_restore "/etc/fail2ban/filter.d/$app.conf"
 ynh_systemctl --action=restart --service=fail2ban
