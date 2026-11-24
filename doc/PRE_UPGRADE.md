@@ -1,2 +1,3 @@
-If MediaMTX oesn't restart after the upgrade, check the logs.
-There's changes that the config file needs some adjustments.
+If MediaMTX doesn't restart after the upgrade, check the logs.
+
+There's chances that the config file needs some adjustments.
